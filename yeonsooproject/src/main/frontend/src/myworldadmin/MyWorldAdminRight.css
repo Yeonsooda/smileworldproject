@@ -1,0 +1,160 @@
+/* 공통 */
+#outerright {
+    display: inline-block;
+    background-color: rgb(169, 212, 221);
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 3px;
+    border-left: none;
+    width: 68%;
+    height: 100%;
+    position: relative;
+}
+  
+#dotright {
+    display: inline-block;
+    background-color: white;
+    background-clip: content-box;
+    border-radius: 20px;
+    height: 93%;
+    width: 95%;
+    border: dashed white;
+    border-width: 3px;
+    margin: 30px 30px 30px 0px;
+    padding: 10px 10px 10px 0px;
+    border-left: none;
+    overflow: auto; 
+}
+  
+#ifright_MyWorld {
+    background-color: white;
+    width: 95%;
+    height: 91%;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    border: solid #aaaaaa;
+    border-width: 3px;
+    /* border-right: none; */
+    overflow: auto; 
+}
+
+.MyWorldTitle {    
+    width: 820px;
+    height: 50px;
+    margin: auto;   
+}
+
+.title { /* style={{fontSize: 25, fontWeight: 'bold', color: '#298FA6', marginTop: 30}} */
+    width: 500px;
+    height: 24px;
+    float: left;
+    font-size: 18pt;
+    font-weight: bold; 
+    color: #298FA6;
+    font-family: a옛날사진관3;
+    vertical-align: bottom;
+    margin-top: 20px; 
+}
+
+.myworldTitleText {
+    margin-top: 20px;
+    width: 450px;
+    font-family: a옛날사진관3;
+}
+
+#rightcontainer_admin {
+    width: 810px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+} 
+
+#toMain {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 1030px;
+}
+
+.toMainBtn{
+    background-color: rgb(253, 117, 7);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 11pt;
+    font-family: a옛날사진관3;
+    margin-left: 95px;
+}
+/* 공통 */
+.adminContainer {
+    width: 750px;
+    /* height: 600px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column;  */
+    margin: 30px 0px 0px 0px;
+
+  }
+
+/* miniroom */
+#miniroom_admin {
+    display: flex;
+    width: 700px;
+    height: 385px; /* 370  */
+    flex-direction: column;
+    /* margin-bottom: 2%; */
+    font-family: a옛날사진관3;
+}
+#miniroom_admin > #miniroomImg {
+    width: 700px;
+    border: 2px solid grey;
+}
+#miniroom_admin > #minimiImg {
+    width: 50px;
+    height: 100px;
+    position: relative;
+    left: 350px;
+    top: -200px;
+    /* z-index: 2; */
+}
+.minimi{
+    width: 50px;
+    margin: 40px 80px 50px 0px;
+}
+.minimiroom{
+    width: 50px;
+    margin: 75px 20px 0px 0px;
+}
+.selectMinimi {
+    width: 350px;
+    height: 270px;
+    max-height: 270px;
+    float: left;
+    border: 1px solid rgb(202, 198, 198);
+    overflow: auto;
+}
+.selectMiniroom {
+    width: 350px;
+    height: 270px;
+    max-height: 270px;
+    float: right;
+    border: 1px solid  rgb(202, 198, 198);
+    overflow: auto;   
+}
+#selectContainer_sub_minimi{
+    width: 350px; 
+    float: left;
+}
+#selectContainer_sub_miniroom{
+    width: 350px; 
+    float: right;
+}

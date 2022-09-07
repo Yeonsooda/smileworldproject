@@ -1,0 +1,64 @@
+#adminLeftContainer {
+    width: 316px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+#smallContainer {
+    width: 90%;
+    padding-top: 7%;
+}
+.bold {
+    color: #298fa6;
+    font-weight: bold;
+}
+#adminList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    border-top: 1px solid grey;
+    padding-top: 5%;
+    margin-bottom: -15px;
+}
+.list_adminFolder {
+    width: 100%;
+    list-style-position: inside;
+    list-style-image: url("./image/menubar.png"); /* import menuBar from './image/setting_menu_3lines.png'; {menuBar} width='15' alt='menuBar' */
+    border: none;
+    color: black;
+
+    /* margin-bottom: 10px; */
+    font-size: 11pt;
+}
+
+.adminLink{
+    height: 25px;
+}
+/* .list_adminFolder_sub {
+    width: 100%;
+    list-style-position: inside;
+    list-style-image: url("./image/menubar_sub.png"); 
+    border: none;
+    color: black;
+    font-size: 11pt;
+} */
+#inList_adminFolder {
+    display: none;
+    /* margin-top: 10px; */
+}
+.listAdd_adminFolder {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;   
+    /* width: 100%; */
+    list-style-position: inside;
+    list-style-image: url("./image/menubar.png");
+    border: none;
+    color: black;
+}
+.divAdd {
+    display: flex;
+    margin-bottom: 5px;
+}

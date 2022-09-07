@@ -1,0 +1,50 @@
+#rightcontainer_MyWorldProfile {
+  width: 830px;
+  height: 600px;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+  align-items: center; 
+  font-family: a옛날사진관3;
+} 
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+  width: 609.5x;
+  height: 500px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  overflow: auto; 
+}
+
+.profileEditBtnContainer{
+  text-align: center; 
+}
+
+.profileEditBtn {
+  width: 250px;
+  font-family: a옛날사진관3;
+}
+
+.profileEditTitle {
+  margin: 15px 0px 20px 0px;
+  font-family: a옛날사진관3;
+  font-size: 11.5pt;
+  /* text-align: center; */
+  float: left; 
+}
+
+.profileEditContainer{
+  margin: 40px 0px -80px 10px;
+  /* float: left; */
+}
+
+#myworldProfileRight_ViewContainer{
+  width: 600px;
+  height: 570px;
+  overflow: auto; 
+}
+
+.profileViewToEditBtnContainer{
+  width: 600px;
+  height: 100px;
+}

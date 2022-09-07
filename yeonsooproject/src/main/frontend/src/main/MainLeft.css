@@ -1,0 +1,101 @@
+#outerleft {
+    display: inline-block;
+    background-color: rgb(169, 212, 221);
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 3px;
+    border-right: none;
+    width: 31%;
+    height: 100%;
+}
+  
+#dotleft {
+    display: inline-block;
+    background-color: white;
+    background-clip: content-box;
+    border-radius: 20px;
+    height: 93%;
+    width: 90%;
+    border: dashed white;
+    border-width: 3px;
+    margin: 30px 0px 30px 20px;
+    padding: 10px 0px 10px 10px;
+    border-right: none;
+    position: relative;
+    left: 25px;
+    overflow: auto; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    position: relative;
+  }
+  
+#ifleft {
+    /* display: inline-block; */
+    background-color: white;
+    width: 90%;
+    height: 85%;
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    top: 40px;
+    border: solid #aaaaaa;
+    border-width: 3px;
+    font-family: "a옛날사진관3";  
+}  
+
+.loginContainer {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 180px;
+    left: 15px;
+    top: 15px;
+    position: relative;    
+}
+
+.loginContainer_sub{    
+    margin:auto;
+}
+
+.loginInput {
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 8pt;
+}
+
+.loginBtn {
+    margin-top: 5px;
+    background-color: rgb(253, 117, 7);
+    color: white;
+    border: none;
+    width: 55px;
+    height: 67px;    
+    font-family: "a옛날사진관3"; 
+    font-size: 11pt;
+}
+
+.loginEtcContainer{
+    width: 310px; 
+    margin: auto;   
+}
+
+.loginEtcFont {
+    margin: 0px 0px 8px 10px;
+    font-size: 10.5px;
+}
+
+.signupBtn, .finderBtn {
+    height: 17px;
+    float: right;
+    color: gray;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    font-family: "a옛날사진관3";  
+}

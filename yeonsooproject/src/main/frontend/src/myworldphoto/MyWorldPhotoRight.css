@@ -1,0 +1,265 @@
+#outerright {
+  display: inline-block;
+  background-color: rgb(169, 212, 221);
+  border-radius: 20px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 3px;
+  border-left: none;
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+
+#dotright {
+  display: inline-block;
+  background-color: white;
+  background-clip: content-box;
+  border-radius: 20px;
+  height: 93%;
+  width: 95%;
+  border: dashed white;
+  border-width: 3px;
+  margin: 30px 30px 30px 0px;
+  padding: 10px 10px 10px 0px;
+  border-left: none;
+  overflow: auto;
+}
+
+#ifright_MyWorld {
+  background-color: white;
+  width: 95%;
+  height: 91%;
+  border-radius: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  border: solid #aaaaaa;
+  border-width: 3px;
+  /* border-right: none; */
+  overflow: auto;
+}
+
+.MyWorldTitle {
+  width: 820px;
+  height: 50px;
+  margin: auto;
+}
+
+.title {
+  /* style={{fontSize: 25, fontWeight: 'bold', color: '#298FA6', marginTop: 30}} */
+  width: 500px;
+  height: 24px;
+  float: left;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #298FA6;
+  font-family: a옛날사진관3;
+  vertical-align: bottom;
+  margin-top: 20px;
+}
+
+.myworldTitleText {
+  margin-top: 20px;
+  width: 450px;
+  font-family: a옛날사진관3;
+}
+
+#rightcontainer_myworldphoto_view {
+  width: 810px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  font-family: a옛날사진관3;
+  margin-top: 25px;
+}
+
+#rightcontainer_myworldphoto {
+  width: 810px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5px;
+  font-family: a옛날사진관3;
+  margin-top: 5px;
+}
+
+#toMain {
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 1030px;
+}
+
+.toMainBtn {
+  background-color: rgb(253, 117, 7);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 11pt;
+  font-family: a옛날사진관3;
+  margin-left: 95px;
+}
+
+/*  사진첩 view css  */
+.photoAlbumContainer {
+  width: 750px;
+  height: 600px;
+  max-height: 720px;
+  /*  margin-top: -30px;
+  margin-bottom: 0px;  */
+  display: flex;
+  /* justify-content: center;*/
+  /* align-items: center; */
+  /* flex-direction: column;  */
+  margin: 30px 0px 0px 15px;
+}
+
+.pic {
+  width: 750px;
+}
+
+.picInfo {
+  background-color: #eaeaea;
+  height: 40px;
+  /* 50px; */
+  /* padding: 0.03%; */
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;  */
+  text-align: center;
+}
+
+.copyBtn {
+  float: right;
+  margin-right: 10px;
+}
+
+.picWho {
+  margin: 0.03%;
+  padding: 0.5%;
+}
+
+.picContentContainer {
+  max-height: 400px;
+  /* 500px; */
+  /* overflow: auto; */
+}
+
+.picContent {
+  text-align: center;
+  min-height: 350px;
+  max-height: 350px;
+  /* 370px; */
+  margin-bottom: 15px;
+  min-width: 750px;
+  max-width: 750px;
+  overflow: auto;
+}
+
+.photocommentContainer {
+  min-height: 90px;
+  max-height: 90px;
+  overflow: auto;
+}
+
+.photocomment {
+  background-color: #F5F5F5;
+  width: 700px;
+  /* 750px; */
+  min-height: 80px;
+  margin-bottom: 2%;
+  margin: auto;
+}
+
+#photocommentText1 {
+  width: 600px;
+}
+
+.photocommentList {
+  height: 30px;
+  position: relative;
+  left: 1%;
+  /* margin-bottom: -7px; */
+}
+
+.everyBtnContainer {
+  width: 750px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  /*   border: none;
+  border-top: 0.1px solid gray; */
+}
+
+.everyBtn {
+  margin: auto;
+  width: 720px;
+  height: 15px;
+  /* margin-bottom: 22px; */
+}
+
+/* 사진첩 write */
+.photoEditContainer {
+  width: 750px;
+  height: 700px;
+  max-height: 720px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0px 0px 18px;
+}
+
+.picEdit {
+  width: 750px;
+}
+
+.picContentEdit {
+  text-align: center;
+}
+
+/* 클래스 이름으로 css를 줄 경우 동일한 클래스에 모두 css가 적용되므로 특정 부모 클래스를 추가해주기 */
+div.photoEditContainer .ck.ck-content.ck-editor__editable {
+  width: 750px;
+  height: 500px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.picTitleEditDiv {
+  height: 50px;
+  vertical-align: middle;
+  /* 안먹힘 */
+  margin-bottom: 5px;
+}
+
+.picTitleEdit {
+  width: 750px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  font-size: 20px;
+  resize: none;
+}
+
+.photoEditBtnContainer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.photoEditBtn {
+  width: 250px;
+  font-family: a옛날사진관3;
+}

@@ -1,0 +1,55 @@
+.signupContainer_main {
+    width: 780px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: a옛날사진관3;
+}
+
+.signupFormMsg {
+    width: 465px;/*500  */
+    margin: 15px 0px 10px 0px;
+    font-family: a옛날사진관3;
+    font-size: 11.5pt;
+    text-align: center;
+    float: left; 
+}
+
+.panel_signup {
+    width: 465px;/* 450 */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* position: relative;  */
+    float: left;
+}
+
+.signupTitle {
+    float: left;
+    font-family: a옛날사진관3;
+    font-size: 10pt;
+    font-weight: bold;
+    width: 150px;
+    text-align: left;
+}
+
+.genderDiv {
+    display: flex;
+    margin-top: 22px;
+    font-size: 11.5pt;
+}
+
+.ad {    
+    width: 250px;
+    height: 600px;
+    float: right;
+    margin-top: 95px;
+    
+}
+
+.idForm{
+    margin: auto;
+    margin-right: 5px;
+    display: flex;
+}

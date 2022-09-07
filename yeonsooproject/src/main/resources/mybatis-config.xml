@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="user.bean.UserDTO" alias="user"/>
+		<typeAlias type="myworld.bean.MyWorldHomeDTO" alias="myworldhome"/>
+		<typeAlias type="myworld.bean.MyWorldProfileDTO" alias="myworldprofile"/>
+		<typeAlias type="myworld.bean.MyWorldDiaryFolderDTO" alias="myworlddiaryfolder"/>
+		<typeAlias type="myworld.bean.MyWorldDiaryBoardDTO" alias="myworlddiaryboard"/>
+		<typeAlias type="myworld.bean.MyWorldDiaryCommentDTO" alias="myworlddiarycomment"/>
+		<typeAlias type="myworld.bean.MyWorldPhotoFolderDTO" alias="myworldphotofolder"/>
+		<typeAlias type="myworld.bean.MyWorldPhotoBoardDTO" alias="myworldphotoboard"/>
+		<typeAlias type="myworld.bean.MyWorldPhotoCommentDTO" alias="myworldphotocomment"/>
+		<typeAlias type="myworld.bean.MyWorldAdminFolderDTO" alias="myworldadminfolder"/>
+		<typeAlias type="myworld.bean.MyWorldAdminMinimiDTO" alias="myworldadminminimi"/>
+		<typeAlias type="myworld.bean.MyWorldAdminMiniroomDTO" alias="myworldadminminiroom"/>
+		<typeAlias type="myworld.bean.MyWorldVisitorBoardDTO" alias="myworldvisitorboard"/>
+		<typeAlias type="myworld.bean.MyWorldVisitorCommentDTO" alias="myworldvisitorcomment"/>
+		<typeAlias type="myworld.bean.MyWorldAllBoardDTO" alias="myworldallboard"/>
+	</typeAliases>	
+	
+	<mappers>
+	</mappers>
+</configuration>

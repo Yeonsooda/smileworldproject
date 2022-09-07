@@ -1,0 +1,227 @@
+/* 공통 */
+#outerright {
+    display: inline-block;
+    background-color: rgb(169, 212, 221);
+    border-radius: 20px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 3px;
+    border-left: none;
+    width: 68%;
+    height: 100%;
+    position: relative;
+}
+  
+#dotright {
+    display: inline-block;
+    background-color: white;
+    background-clip: content-box;
+    border-radius: 20px;
+    height: 93%;
+    width: 95%;
+    border: dashed white;
+    border-width: 3px;
+    margin: 30px 30px 30px 0px;
+    padding: 10px 10px 10px 0px;
+    border-left: none;
+    overflow: auto; 
+}
+  
+#ifright_MyWorld {
+    background-color: white;
+    width: 95%;
+    height: 91%;
+    border-radius: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    border: solid #aaaaaa;
+    border-width: 3px;
+    /* border-right: none; */
+    overflow: auto; 
+}
+
+.MyWorldTitle {    
+    width: 820px;
+    height: 50px;
+    margin: auto;   
+}
+
+.title { /* style={{fontSize: 25, fontWeight: 'bold', color: '#298FA6', marginTop: 30}} */
+    width: 500px;
+    height: 24px;
+    float: left;
+    font-size: 18pt;
+    font-weight: bold; 
+    color: #298FA6;
+    font-family: a옛날사진관3;
+    vertical-align: bottom;
+    margin-top: 20px; 
+}
+
+.myworldTitleText {
+    margin-top: 20px;
+    width: 450px;
+    font-family: a옛날사진관3;
+}
+
+#rightcontainer {
+    width: 810px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+} 
+
+#toMain {
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 150px;
+    left: 1030px;
+}
+
+.toMainBtn{
+    background-color: rgb(253, 117, 7);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 11pt;
+    font-family: a옛날사진관3;
+    margin-left: 95px;
+}
+/* 공통 */
+/* 여기부터 확인 */
+/* updated news */
+#news {
+    width: 90%;
+    height: 150px;
+    margin-top: 2%;
+    font-family: a옛날사진관3;
+}
+#newsBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#newsBoard {
+    width: 47%;
+    height: 120px;
+    margin-top: 1%;
+    border-top: 1px solid grey;
+}
+.bold {
+    color: #298fa6;
+    font-weight: bold;
+}
+
+#list {
+    margin-top: 1%;
+    flex-direction: row;
+    display: flex;
+    height: 22px;
+}
+#list > span {
+    font-size: 13px;
+}
+ /* 이미지 넣기 전 */
+/* #photo {
+    color: white;
+    font-size: 15px;
+    background-color: rgb(253, 117, 7);
+    border-radius: 5px;
+} */
+.photo{
+    background-image: url("./image/title-picture.png");
+    width: 47px;
+}
+/* 이미지 넣기 전 */
+/* #diary {
+    color: white;
+    font-size: 15px;
+    background-color: gray;
+    border-radius: 5px;
+    margin-right: 1%;
+} */
+.board {
+    background-image: url("./image/title-board.png");
+    width: 47px;
+}
+.right > #list {
+    border-bottom: 1px solid grey;
+}
+/* updated news */
+
+/* miniroom */
+#miniroom {
+    display: flex;
+    width: 90%;
+    height: 400px; /* 370  */
+    flex-direction: column;
+    margin-bottom: 2%;
+    font-family: a옛날사진관3;
+}
+#miniroom > #miniroomImg {
+    width: 100%;
+    border: 2px solid grey;
+}
+#miniroom > #minimiImg {
+    width: 50px;
+    height: 100px;
+    position: relative;
+    left: 350px;
+    top: -200px;
+    /* z-index: 2; */
+}
+/* miniroom */
+
+/* 일촌평 */
+#friendSay {
+    display: flex;
+    height: 100px; /* 300 */
+    flex-direction: column;
+    width: 90%;
+    font-family: a옛날사진관3;
+}
+#friendSay > .bold {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1%;
+}
+#inputSay {
+    height: 150px;
+    background-color: lightgrey;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+#inputSay > .bold {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+input {
+    width: 70%;
+    margin-right: 2%;
+}
+#sayList {
+    height: 100px; /* 230 */ 
+}
+/* li { */
+.friendsmsgLi{    
+    width: 95%;
+    font-size: 14px;
+    list-style-type: none;
+    list-style-position: inside;
+    border-bottom: 1px solid grey;
+    height: 25px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+.friendsMsgBtn {
+    border: 1px solid gray;
+    background-color: white;
+}

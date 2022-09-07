@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="myworldSQL">
+	<insert id="insertmyworldHome_friendsmsg" parameterType="java.util.Map">
+		insert myworldHome set 
+			myworldHome_friendsmsgContent=#{myworldHome_friendsmsgContent}, 
+			myworldHome_userId_host=#{myworldHome_userId_host},
+			myworldHome_userId_writer=#{myworldHome_userId_writer}, 
+			myworldHome_userNickname_writer=#{myworldHome_userNickname_writer},
+			date_created=sysdate()
+	</insert>
+	
+	<select id="getMyworldHome_friensmsgList" parameterType="String" resultType="myworldhome">
+		select*from myworldHome where myworldHome_userId_host=#{myworldHome_userId_host}
+	</select>
+	
+	<insert id="writeMyworldProfile" parameterType="java.util.Map"> 
+		insert myworldProfile set 
+			myworldProfile_profileContent=#{myworldProfile_profileContent}, 
+			myworldProfile_userId=#{myworldProfile_userId},
+			myworldProfile_boardName="profile",  
+			date_created=sysdate()
+	</insert>
+		
+	<update id="updateMyworldProfile" parameterType="java.util.Map"> 
+		update myworldProfile set 
+			myworldProfile_profileContent=#{myworldProfile_profileContent}
+			where myworldProfile_userId=#{myworldProfile_userId}
+	</update>
+	
+	<select id="getMyworldProfile" parameterType="String" resultType="myworldprofile">
+		select myworldProfile_profileContent from myworldProfile where myworldProfile_userId=#{myworldProfile_userId}
+	</select>
+	
+	<insert id="addDiaryFolder" parameterType="java.util.Map">
+		insert myworldDiary_folder set folder_name=#{folder_name}, folder_userId=#{folder_userId}, date_created=sysdate()
+	</insert>
+	
+	<select id="getDiaryFolderList" parameterType="String" resultType="myworlddiaryfolder">
+		select*from myworldDiary_folder where folder_userId=#{folder_userId}
+	</select>
+	
+	<update id="updateDiaryFolder" parameterType="java.util.Map"> 
+		update myworldDiary_folder set 
+			folder_name=#{folder_name}
+			where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</update>
+	
+	<delete id="deleteDiaryFolder" parameterType="java.util.Map">	
+		delete from myworldDiary_folder where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</delete>
+	
+	<insert id="writeDiaryBoard" parameterType="java.util.Map">
+		insert myworldDiary_board set 
+				board_name="diary", 
+				board_title=#{board_title}, 
+				board_content=#{board_content}, 
+				board_folderNo=#{board_folderNo}, 
+				board_userId=#{board_userId}, 
+				board_userNickname=#{board_userNickname}, 
+				date_created=sysdate()
+	</insert>
+	
+	<select id="getDiaryBoardList" parameterType="String" resultType="myworlddiaryboard">
+		select*from myworldDiary_board where board_userId=#{board_userId} order by board_no desc;
+	</select>	 
+	
+	<insert id="writeDiaryComment" parameterType="java.util.Map">
+		insert myworldDiary_comment set 
+				cmt_content=#{cmt_content}, 
+				cmt_boardNo=#{cmt_boardNo}, 
+				cmt_userId_host=#{cmt_userId_host}, 
+				cmt_userId_writer=#{cmt_userId_writer}, 
+				cmt_userNickname_writer=#{cmt_userNickname_writer}, 
+				date_created=sysdate()
+	</insert>
+	
+	<select id="getDiaryCommentList" parameterType="java.util.Map" resultType="myworlddiarycomment">
+		select*from myworldDiary_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host} order by cmt_no desc;
+	</select>
+	
+	<delete id="deleteDiaryBoard" parameterType="java.util.Map">	
+		delete from myworldDiary_board where board_no=#{board_no} and board_userId=#{board_userId}
+	</delete>
+	
+	<delete id="deleteDiaryComment" parameterType="java.util.Map">	
+		delete from myworldDiary_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host}
+	</delete>
+	
+	<insert id="addPhotoFolder" parameterType="java.util.Map">
+		insert myworldPhoto_folder set folder_name=#{folder_name}, folder_userId=#{folder_userId}, date_created=sysdate()
+	</insert>
+	
+	<select id="getPhotoFolderList" parameterType="String" resultType="myworldphotofolder">
+		select*from myworldPhoto_folder where folder_userId=#{folder_userId}
+	</select>
+	
+	<update id="updatePhotoFolder" parameterType="java.util.Map"> 
+		update myworldPhoto_folder set 
+									folder_name=#{folder_name}
+									where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</update>
+	
+	<delete id="deletePhotoFolder" parameterType="java.util.Map">	
+		delete from myworldPhoto_folder where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</delete>
+	
+	<insert id="writePhotoBoard" parameterType="java.util.Map">
+		insert myworldPhoto_board set 
+									board_name="photo", 
+									board_title=#{board_title}, 
+									board_content=#{board_content}, 
+									board_folderNo=#{board_folderNo}, 
+									board_userId=#{board_userId}, 
+									board_userNickname=#{board_userNickname}, 
+									date_created=sysdate()
+	</insert>
+	
+	<update id="updatePhotoBoard" parameterType="java.util.Map">
+		update myworldPhoto_board set 
+									board_title=#{board_title}, 
+									board_content=#{board_content} 
+									where board_no=#{board_no} and board_folderNo=#{board_folderNo} and board_userId=#{board_userId}
+	</update>
+	
+	<select id="getPhotoBoard" parameterType="java.util.Map" resultType="myworldphotoboard">
+		select*from myworldPhoto_board where board_no=#{board_no} and board_userId=#{board_userId}
+	</select> 
+	
+	<select id="getPhotoBoardList" parameterType="String" resultType="myworldphotoboard">
+		select*from myworldPhoto_board where board_userId=#{board_userId} order by board_no desc;
+	</select> 
+	
+	<insert id="writePhotoComment" parameterType="java.util.Map">
+		insert myworldPhoto_comment set 
+										cmt_content=#{cmt_content}, 
+										cmt_boardNo=#{cmt_boardNo}, 
+										cmt_userId_host=#{cmt_userId_host}, 
+										cmt_userId_writer=#{cmt_userId_writer}, 
+										cmt_userNickname_writer=#{cmt_userNickname_writer}, 
+										date_created=sysdate()
+	</insert>
+	
+	<select id="getPhotoCommentList" parameterType="java.util.Map" resultType="myworldphotocomment">
+		select*from myworldPhoto_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host} order by cmt_no asc;
+	</select>
+
+	<delete id="deletePhotoBoard" parameterType="java.util.Map">
+		delete from myworldPhoto_board where board_no=#{board_no} and board_userId=#{board_userId};
+	</delete>
+	
+	<delete id="deletePhotoComment" parameterType="java.util.Map">
+		delete from myworldPhoto_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host};
+	</delete>
+		
+	<insert id="addAdminFolder" parameterType="java.util.Map">
+		insert myworldAdmin_folder set folder_name=#{folder_name}, folder_userId=#{folder_userId}, date_created=sysdate()
+	</insert>
+	
+	<select id="getAdminFolderList" parameterType="String" resultType="myworldadminfolder">
+		select*from myworldAdmin_folder where folder_userId=#{folder_userId}
+	</select>
+	
+	<update id="updateAdminFolder" parameterType="java.util.Map"> 
+		update myworldAdmin_folder set 
+									folder_name=#{folder_name}
+									where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</update>
+	
+	<delete id="deleteAdminFolder" parameterType="java.util.Map">	
+		delete from myworldAdmin_folder where folder_userId=#{folder_userId} and folder_no=#{folder_no}
+	</delete>
+	
+	<select id="getAdminMinimiList" resultType="myworldadminminimi">
+		select*from myworldAdmin_minimi
+	</select>
+	
+	<select id="getAdminMiniroomList" resultType="myworldadminminiroom">
+		select*from myworldAdmin_miniroom
+	</select>
+	
+	<insert id="writeVisitorBoard" parameterType="java.util.Map">
+		insert myworldVisitor_board set 
+										 board_name="visitor", 
+										 board_title=#{board_title},
+										 board_content=#{board_content}, 
+										 board_userId=#{board_userId}, 
+										 board_userNickname=#{board_userNickname}, 
+										 board_userImgMinimi=#{board_userImgMinimi}, 
+										 date_created=sysdate()
+	</insert>
+	
+	<select id="getVisitorBoardList" parameterType="String" resultType="myworldvisitorboard">
+		select*from myworldVisitor_board where board_userId=#{board_userId} order by board_no desc
+	</select>
+	
+	<insert id="writeVisitorComment" parameterType="java.util.Map">
+		insert myworldVisitor_comment set 
+										cmt_content=#{cmt_content}, 
+										cmt_boardNo=#{cmt_boardNo}, 
+										cmt_userId_host=#{cmt_userId_host}, 
+										cmt_userId_writer=#{cmt_userId_writer}, 
+										cmt_userNickname_writer=#{cmt_userNickname_writer}, 
+										date_created=sysdate()
+	</insert>
+	
+	<select id="getVisitorCommentList" parameterType="java.util.Map" resultType="myworldvisitorcomment">
+		select*from myworldVisitor_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host} order by cmt_no asc;
+	</select>
+
+	<delete id="deleteVisitorBoard" parameterType="java.util.Map">
+		delete from myworldVisitor_board where board_no=#{board_no} and board_userId=#{board_userId};
+	</delete>
+	
+	<delete id="deleteVisitorComment" parameterType="java.util.Map">
+		delete from myworldVisitor_comment where cmt_boardNo=#{cmt_boardNo} and cmt_userId_host=#{cmt_userId_host};
+	</delete>
+	
+	<!-- 마이월드 홈 리스트 띄우기  -->
+	<select id="getMyworldAllBoardList" parameterType="String" resultType="myworldallboard">
+  		SELECT*FROM(
+				select board_no, board_name, board_title, board_content, board_userId, board_userNickname, date_created
+				from (
+				    select board_no, 
+				    	   board_name, 
+				    	   board_title, 
+				    	   board_content, 
+				    	   board_userId, 
+				    	   board_userNickname, 
+				    	   date_created
+		    	   	from myworldDiary_board
+				   
+				    union all
+				    select board_no, 
+				    	   board_name, 
+				    	   board_title, 
+				    	   board_content, 
+				    	   board_userId, 
+				    	   board_userNickname, 
+				    	   date_created
+		    	   	from myworldPhoto_board
+				    
+				    union all				    
+				    select board_no, 
+				    	   board_name, 
+				    	   board_title, 
+				    	   board_content, 
+				    	   board_userId, 
+				    	   board_userNickname, 
+				    	   date_created
+		    	   	from myworldVisitor_board
+				    )TT  
+	    	   		Where board_userId=#{board_userId}
+	    	   		ORDER BY DATE_CREATED DESC 
+	    	   		Limit 4)TTT			    	   		
+	</select>
+	
+	<!-- 마이월드 홈 글갯수 띄우기  -->
+	<select id="getDiaryBoardCnt" parameterType="String" resultType="Integer">
+		SELECT count(*) FROM myworldDiary_board where board_userId=#{board_userId}
+	</select>
+	
+	<select id="getPhotoBoardCnt" parameterType="String" resultType="Integer">
+		SELECT count(*) FROM myworldPhoto_board where board_userId=#{board_userId}
+	</select>
+	
+	<select id="getVisitorBoardCnt" parameterType="String" resultType="Integer">
+		SELECT count(*) FROM myworldVisitor_board where board_userId=#{board_userId}
+	</select>
+ </mapper>

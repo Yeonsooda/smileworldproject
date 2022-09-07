@@ -1,0 +1,58 @@
+#diaryLeftContainer {
+    width: 316px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+#smallContainer {
+    width: 90%;
+    padding-top: 7%;
+}
+.bold {
+    color: #298fa6;
+    font-weight: bold;
+}
+#diaryList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    border-top: 1px solid grey;
+    padding-top: 5%;
+    margin-bottom: -15px;
+}
+.list {
+    width: 100%;
+    list-style-position: inside;
+    list-style-image: url("./image/folder.png");
+    border: none;
+    color: black;
+
+    /* margin-bottom: 10px; */
+    font-size: 11pt;
+}
+.diaryLink{
+    height: 25px;
+}
+
+#inList {
+    display: none;
+    /* margin-top: 10px; */
+}
+.listAdd {
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;   
+    /* width: 100%; */
+    list-style-position: inside;
+    list-style-image: url("./image/folder.png");
+    border: none;
+    color: black;
+}
+.divAdd {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+

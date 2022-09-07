@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap");
+html,
+body {
+  background-color: #a6a6a6;
+  background-image: url('./image/backgroundImg_basic.png');
+  height: 100%;
+}
+
+#mainContainer {
+  /* background-color: #a6a6a6; */
+  background-image: url('./image/backgroundImg_basic.png');
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  left: 0px;
+  overflow: auto;
+}
+
+@font-face{
+  font-family: "a옛날사진관1";
+  src: url("./font/a옛날사진관1.ttf");
+  font-family: "a옛날사진관2";
+  src: url("./font/a옛날사진관2.ttf");
+  font-family: "a옛날사진관3";
+  src: url("./font/a옛날사진관3.ttf");
+}  
+
+.App{
+  font-family: "a옛날사진관1";
+  font-family: "a옛날사진관2";
+  font-family: "a옛날사진관3";
+}
+
+#page {
+  display: inline-block;
+  width: 1400px;
+  height: 900px;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+} 

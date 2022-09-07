@@ -1,0 +1,279 @@
+/* 공통 */
+#outerright {
+  display: inline-block;
+  background-color: rgb(169, 212, 221);
+  border-radius: 20px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 3px;
+  border-left: none;
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+
+#dotright {
+  display: inline-block;
+  background-color: white;
+  background-clip: content-box;
+  border-radius: 20px;
+  height: 93%;
+  width: 95%;
+  border: dashed white;
+  border-width: 3px;
+  margin: 30px 30px 30px 0px;
+  padding: 10px 10px 10px 0px;
+  border-left: none;
+  overflow: auto;
+}
+
+#ifright_MyWorld {
+  background-color: white;
+  width: 95%;
+  height: 91%;
+  border-radius: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  border: solid #aaaaaa;
+  border-width: 3px;
+  /* border-right: none; */
+  overflow: auto;
+}
+
+.MyWorldTitle {
+  width: 820px;
+  height: 50px;
+  margin: auto;
+}
+
+.title {
+  /* style={{fontSize: 25, fontWeight: 'bold', color: '#298FA6', marginTop: 30}} */
+  width: 500px;
+  height: 24px;
+  float: left;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #298FA6;
+  font-family: a옛날사진관3;
+  vertical-align: bottom;
+  margin-top: 20px;
+}
+
+.myworldTitleText {
+  margin-top: 20px;
+  width: 450px;
+  font-family: a옛날사진관3;
+}
+
+#toMain {
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 1030px;
+}
+
+.toMainBtn {
+  background-color: rgb(253, 117, 7);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 11pt;
+  font-family: a옛날사진관3;
+  margin-left: 95px;
+}
+
+/* 공통 */
+#rightcontainer_visitor {
+  width: 750px;
+  /* 810px; */
+  /*   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+  /* margin-left: 5px; */
+  margin: auto;
+  margin-top: 20px;
+  font-family: a옛날사진관3;
+}
+
+.container_visitor {
+  /*container*/
+  width: 750px;
+  /* 95%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*위에서 아래*/
+  /* padding-left: 3%; */
+}
+
+.topBtn {
+  width: 750px;
+  height: 20px;
+  margin-top: 1%;
+}
+
+/* 방명록 작성 */
+#writing {
+  width: 750px;
+  /* 800px; */
+  height: 230px;
+  /* 220px; */
+  background-color: #ebebeb;
+  border-top: 1px solid #aaabad;
+  border-bottom: 1px solid #aaabad;
+  margin-bottom: 65px;/* 30px; */
+}
+
+#writingImgAndText {
+  width: 700px;
+  /* 770px; */
+  margin: auto;
+  margin-top: 25px;
+  /*  display: flex;
+    align-items: center;
+    justify-content: center; 
+  /* position: relative;
+    top: 8%;
+    left: 3%; */
+}
+
+.writingProfileImg {
+  /* display: inline;  */
+  /*추가*/
+  width: 165px;
+  /* 165px; */
+  height: 165px;
+  /* 165px; */
+  border: 1px solid #aaabad;
+  float: left;
+  background-color: white;
+}
+
+.visitorBook {
+  border: 1px solid #aaabad;
+  width: 520px;
+  /* 580px; */
+  height: 165px;
+  float: right;
+  outline: none;
+  resize: none;
+}
+
+.visitorbookBtn {
+  position: relative;
+  float: right;
+  margin-right: 25px;
+  margin-top: 5px;
+  border: solid 1px #aaabad;
+  /* height: "100px"; */
+}
+
+/* 작성된 방명록 */
+.writed {
+  width: 750px;
+  height: 320px;
+  margin-bottom: 65px;
+}
+
+.writedInfo {
+  width: 750px;
+  height: 40px;
+  background-color: #ebebeb;
+  border-top: 1px solid #aaabad;
+
+  align-items: center;
+  /* justify-content: center; */
+  display: flex;
+  /* padding: 2% 0; */
+}
+
+.infoLeft {
+  width: 372px;
+}
+
+.writedProfileImg {
+  /* display: inline;  */
+  /*추가*/
+  width: 165px;
+  /* 165px; */
+  height: 165px;
+  /* 165px; */
+  /* border: 1px solid #aaabad; */
+  float: left;
+}
+
+.writedImgAndText {
+  width: 700px;
+  height: 165px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* padding: 3%; */
+}
+
+.writedText {
+  /*display: inline;*/
+  border: 0px;
+  width: 520px;
+  height: 165px;
+  float: right;
+  outline: none;
+  resize: none;
+}
+
+.writeComment {
+  width: 750px;
+  max-height: 120px;
+  overflow: auto;
+  /*height: 70px;*/
+  background-color: #ebebeb;
+  border-bottom: 1px solid #aaabad;
+  padding: 2% 2%;
+}
+.visitorCmtDiv {
+  height: 30px;
+}
+.commentText {
+  border: 1px solid #aaabad;
+  height: 60px;
+  width: 615px;
+  margin-right: 20px;
+  /*  margin: auto; */
+  /* margin-left: 2%; */
+  outline: none;
+  resize: none;
+}
+
+.visitorCmtContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.visitorCmtBtn {
+  /* position: relative; */
+  /*  bottom: 28px;
+    left: 20px; */
+  width: 60px;
+  height: 60px;
+  border: 1px solid #aaabad;
+}
+
+/* .marginLeft {
+  margin-left: 2%;
+}
+
+.marginLeftAndColor1 {
+  margin-left: 2%;
+  color: #15336f;
+}
+
+.marginLeftAndColor2 {
+  margin-left: 10px;
+  color: #aaabad;
+} */

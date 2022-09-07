@@ -1,0 +1,76 @@
+#outerright {
+  display: inline-block;
+  background-color: rgb(169, 212, 221);
+  border-radius: 20px;
+  border-color: gray;
+  border-style: solid;
+  border-width: 3px;
+  border-left: none;
+  width: 68%;
+  height: 100%;
+  position: relative;
+}
+
+#dotright {
+  display: inline-block;
+  background-color: white;
+  background-clip: content-box;
+  border-radius: 20px;
+  height: 93%;
+  width: 95%;
+  border: dashed white;
+  border-width: 3px;
+  margin: 30px 30px 30px 0px;
+  padding: 10px 10px 10px 0px;
+  border-left: none;
+  overflow: auto; 
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56.78px;
+  top: 20px;
+  position: relative;
+}
+
+.searchKeyword {
+  width: 330px;
+  height: 35px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: solid 2px gray;
+  text-align: center;
+/*   border-radius: 20px; */
+}
+
+.searchBtn {
+  height: 35px;
+  border: none;
+  background-color: white;
+  top: 5px;
+  position: relative;
+}
+
+#ifright {
+    background-color: white;
+    width: 95%;
+    height: 85%;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+    border: solid #aaaaaa;
+    border-width: 3px;
+    /* border-right: none; */
+}
+
+.mainHome {
+  text-align: center; 
+  margin-top: 50px;
+  font-family: "a옛날사진관3";  
+  /* font-weight: bold; */
+  font-size: 20px;
+}

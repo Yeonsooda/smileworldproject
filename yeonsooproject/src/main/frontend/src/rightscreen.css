@@ -1,0 +1,12 @@
+#ifright {
+  background-color: white;
+  width: 95%;
+  height: 85%;
+  border-radius: 20px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+  border: solid #aaaaaa;
+  border-width: 3px;
+  /* border-right: none; */
+}

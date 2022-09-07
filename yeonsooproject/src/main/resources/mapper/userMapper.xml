@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="userSQL"> 
+ 	<insert id="userSignUp" parameterType="user">
+		insert into userProfile set
+		userId = #{userId}
+		, userPwd = #{userPwd}
+		, userNickname = #{userNickname}
+		, userBirth = #{userBirth}
+		, userGender = #{userGender}
+		, userImg_minimi = #{userImg_minimi}
+		, userImg_miniroom = #{userImg_miniroom}
+		, userImg_gender = #{userImg_gender}	 
+		, userProfile_myworldHome = #{userProfile_myworldHome}
+		, userEmoti_myworldHome = 'delight'
+		, userInfo_myworldHome = '자기소개를 등록해주세요.'			
+		, userLogtime = sysdate()
+		, userAuth = 'Y'
+ 	</insert>
+ 	
+ 	<update id="userUpdate" parameterType="java.util.Map">
+ 		update userProfile set  
+			userPwd = #{userPwd}
+			, userNickname = #{userNickname}
+			, userBirth = #{userBirth}
+			, userGender = #{userGender}
+			, userImg_minimi = #{userImg_minimi}
+			, userImg_gender = #{userImg_gender}	 
+			, userProfile_myworldHome = #{userProfile_myworldHome}		
+			, userLogtime = sysdate()
+		where userId = #{userId}	
+ 	</update>
+ 	
+ 	<select id="checkId" parameterType="String" resultType="user">
+ 		select*from userProfile where userId=#{userId}
+ 	</select>
+ 	
+ 	<select id="userLogin" parameterType="java.util.Map" resultType="user">
+ 		select*from userProfile where userId=#{userId} and userPwd=#{userPwd}
+ 	</select>
+ 	
+ 	<select id="getUser" parameterType="String" resultType="user">
+ 		select*from userProfile where userId=#{userId}
+ 	</select>
+ 	
+ 	<update id="updateUserEmoti_myworldHome" parameterType="java.util.Map">
+ 		update userProfile set userEmoti_myworldHome=#{userEmoti_myworldHome} where userId=#{userId}
+ 	</update>
+ 	
+ 	<update id="updateUserProfile_myworldHome" parameterType="java.util.Map">
+ 		update userProfile set userProfile_myworldHome=#{userProfile_myworldHome} where userId=#{userId}
+ 	</update>
+ 	 	
+ 	<update id="updateUserInfo_myworldHome" parameterType="java.util.Map">
+ 		update userProfile set userInfo_myworldHome=#{userInfo_myworldHome} where userId=#{userId}
+ 	</update>
+ 	
+ 	<update id="updateUserTitle_myworldHome" parameterType="java.util.Map">
+ 		update userProfile set userTitle_myworldHome=#{userTitle_myworldHome} where userId=#{userId}
+ 	</update>
+ 	
+ 	<update id="updateUserMiniroom" parameterType="java.util.Map">
+ 		update userProfile set userImg_minimi=#{userImg_minimi}, userImg_miniroom=#{userImg_miniroom} where userId=#{userId}
+ 	</update>
+ 	
+ 	<delete id="deleteUser" parameterType="String">
+ 		delete from userProfile where userId=#{userId}
+ 	</delete>
+ </mapper>

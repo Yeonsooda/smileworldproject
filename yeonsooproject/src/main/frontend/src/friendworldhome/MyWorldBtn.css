@@ -1,0 +1,26 @@
+.myWorldBtn {
+    font-family: a옛날사진관3;
+}
+#button {
+    display: inline-block;
+    position: absolute;
+    left: 889px;
+    top: 100px;    
+}
+#button button {
+    display: block;
+    background-color: #298fa6;
+    color: white;
+    width: 100px;
+    height: 60px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid navy;
+    border-left: none;
+    margin: 3px;
+    margin-left: 0px;
+    font-size: 20px;
+}
+#button button:focus {
+    border-left: none;
+    outline: none;
+}
